@@ -1,6 +1,6 @@
 #import "place.typ": place-horizontal, place-vertical
 #import "tables-eskd.typ" as eskd-tables
-#import "frame.typ": doc-frame
+#import "frame.typ": document-frame
 
 #let frame(body) = {
   set page(
@@ -10,7 +10,7 @@
       top : 20mm,
       bottom: 20mm,
     ),
-    background: doc-frame
+    background: document-frame
   )
 
   body
@@ -25,7 +25,7 @@
         top : 20mm,
         bottom: 20mm + table-height,
       ),
-      background: if show-frame {doc-frame}
+      background: if show-frame {document-frame}
     )
   if vertical {
     place-vertical(table-type, body, table-height)

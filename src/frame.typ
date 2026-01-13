@@ -8,7 +8,7 @@
     )
 }
 
-#let doc-frame = context {
+#let document-frame = context {
   place(
     right+bottom,
     dx: -5mm,
